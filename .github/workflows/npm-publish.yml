@@ -14,7 +14,9 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Install Dependencies
-        run: 'mvn compile'
+        run: |
+          npm install for Node.js projects
+          npm install
           
       - name: Build Project
         run: |
@@ -33,7 +35,9 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Install Dependencies
-        run: 'mvn compile'
+        run: |
+          npm install for Node.js projects
+          npm install
 
       - name: Build Project
         run: |
